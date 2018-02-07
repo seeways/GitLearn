@@ -42,10 +42,14 @@ git remote remove origin
 ```bash
 $ git push -u origin master
 ```
+
 `-u` 表示第一次推送master分支的所有内容，此后，每次本地提交后，只要有必要，就可以使用命令`git push origin master`推送最新修改。
+
+日常提交只需要使用`git push`即可
 
 ### 从远程克隆
 ```bash
 $ git clone https://github.com/usern/repositoryname.git
 ```
 
+日常获取只需要使用`git pull`即可
