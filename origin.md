@@ -1,6 +1,7 @@
 ## 远程仓库
 
 ### 创建SSH Key
+
 ```bash
 $ ssh-keygen -t rsa -C "youremail@example.com"
 
@@ -26,7 +27,9 @@ The key's randomart image is:
 +-----------------+
 
 ```
+
 ### 关联远程仓库
+
 ```bash
 git remote add origin git@github.com:git_username/repository_name.git
 ```
@@ -34,20 +37,43 @@ git remote add origin git@github.com:git_username/repository_name.git
 添加后，远程库的名字就是origin
 
 ### 取消关联远程库
+
 ```bash
 git remote remove origin
 ```
 
-### 推送到远程仓库
+### 查看远程库
+
 ```bash
-$ git push -u origin master
+git remote
 ```
 
-`-u` 表示第一次推送master分支的所有内容，此后，每次本地提交后，只要有必要，就可以使用命令`git push origin master`推送最新修改。
+### 查看远程库详细信息
+
+如果没有相关权限，则看不到相关地址信息  
+
+例如没有推送权限，则看不到push地址
+
+```bash
+git remote -v
+```
+
+### 推送到远程仓库
+
+```bash
+$ git push origin <branch-name>
+```
+
+`-u` 表示第一次推送master分支的所有内容,不过建议先clone在push，尽量避免此方法
+
+```bash
+$ git push -u origin <branch-name>
+```
 
 日常提交只需要使用`git push`即可
 
 ### 从远程克隆
+
 ```bash
 $ git clone https://github.com/usern/repositoryname.git
 ```
