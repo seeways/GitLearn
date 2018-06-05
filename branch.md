@@ -165,8 +165,13 @@ $ git checkout -b branch-name origin/branch-name，
 
 ```bash
 $ git branch --set-upstream branch-name origin/branch-name；
-选项 --set-upstream 已弃用并将被移除。    
-考虑使用 --track 或 --set-upstream-to 分支 origin/branch-name  设置为跟踪来自origin 的远程分支branch-name。
+
+
+
+设置为跟踪来自origin 的远程分支branch-name。
+使用 --track 或 --set-upstream-to 分支 origin/branch-name  
+
+$ git branch --track branch-name origin/branch-name;
 ```
 
 ### 从本地推送分支
