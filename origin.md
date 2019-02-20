@@ -64,7 +64,7 @@ git remote -v
 $ git push origin <branch-name>
 ```
 
-`-u` 表示第一次推送master分支的所有内容,不过建议先clone在push，尽量避免此方法
+`-u` 意同 --set-upstream，用以将本地库分支与远程库分支关联
 
 ```bash
 $ git push -u origin <branch-name>
