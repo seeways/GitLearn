@@ -36,7 +36,7 @@ git show <commit-hash-id>
 
 有时候日志过长，可以按下英文q退出状态
 
-### 查看提交历史和说明
+### 查看HEAD指向历史和说明
 
 ```bash
 $ git reflog
