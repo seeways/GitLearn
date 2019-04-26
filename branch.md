@@ -37,13 +37,30 @@
 $ git branch <branchname>
 ```
 
-### 查看分支
+### 查看本地分支
 
 all branch
 
 ```bash
 $ git branch
 ```
+
+### 查看远程分支
+
+r=remote
+
+```bash
+$ git branch -r
+```
+
+### 查看所有分支
+
+a=all
+
+```bash
+$ git branch -a
+```
+
 
 ### 切换分支
 
