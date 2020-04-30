@@ -59,3 +59,6 @@ $ git checkout -- text.txt
 ```
 Q：如果真的想从版本库里面删除文件怎么做？
 A：执行`git commit -m "delete text.txt"`，提交后最新的版本库将不包含这个文件
+
+### 查看本次修改内容
+`git show`
