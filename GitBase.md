@@ -7,6 +7,13 @@ $ git config --global user.email "email@example.com"
 
 `git config`命令的`--global`参数，表明这台机器上的所有Git仓库都会使用这个配置，也可以对某个仓库指定不同的用户名和邮箱地址。
 
+检查配置
+
+```bash
+git config --list
+```
+
+
 ### 工作区、暂存区和版本库的区别
 - 工作区：在电脑里能看到的目录；
 - 版本库：在工作区有一个隐藏目录`.git`，是Git的版本库。  
